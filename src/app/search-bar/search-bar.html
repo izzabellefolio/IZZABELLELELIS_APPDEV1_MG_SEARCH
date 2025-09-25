@@ -1,0 +1,5 @@
+<section class="search-container container-fluid d-flex justify-content-center align-items-center">
+  <h2>Google</h2>
+  <input class="search-bar container-fluid" type="text" placeholder="Search..." [(ngModel)]="query" (input)="onSearchChange()">
+  <button (click)="onSearch()">Search</button>
+</section>

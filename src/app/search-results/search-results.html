@@ -1,0 +1,13 @@
+<section>
+  <div class="results-container container">
+    <h5>Search Results</h5>
+    <p *ngIf="filteredItems.length === 0">No results found.</p>
+    <ul>
+      <li *ngFor="let item of filteredItems" style="margin-bottom: 1.5rem; list-style-type: none; padding: 1rem; border-bottom: 1px solid #eee; text-decoration: none;">
+        <h4><a [href]="item.link" target="_blank">{{ item.title }}</a></h4>
+        <p>{{ item.description }}</p>
+      </li>
+    </ul>
+    <p *ngIf="filteredItems.length > 0">Showing {{ filteredItems.length }} results</p>
+  </div>
+</section>
